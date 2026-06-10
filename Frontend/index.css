@@ -1,0 +1,478 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    background-image: url("asset/back2.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* NAVBAR */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+}
+
+
+.logo h1{
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+}
+
+
+.list{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.list li{
+    cursor: pointer;
+}
+.list li a{
+    text-decoration: none;
+    color: black;
+}
+
+.list li a:hover{
+    color:blueviolet;
+}
+
+/* HOME */
+.hero{
+    height: 100vh;
+
+    /* background-image: url("asset/back2.avif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.name{
+    text-align: center;
+}
+.name h1{
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+.name h2{
+    margin-top: 0;
+}
+.connect{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.connect p{
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.social-icons{
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a{
+    color: black;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    color: yellow;
+    transform: translateY(-5px);
+}
+
+/* ABOUT */
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40Px;
+    gap: 100px;
+}
+.about-left{
+    width: 60%;
+}
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+     width: 35%;
+    margin-right: 80px;
+}
+.about-left h1{
+    font-size: 60px;
+}
+
+
+.about-left h2{
+    font-size: 35px;
+}
+
+.about-left p{
+    font-size: 20px;
+    line-height: 1.8;
+}
+.progress{
+    width: 100%;
+    height: 12px;
+    background: lightgray;
+    border-radius: 20px;
+}
+/* HTML Progress */
+.html{
+    width: 0;
+    height: 12px;
+    background: purple;
+    border-radius: 20px;
+    animation: html-fill 3s ease forwards;
+}
+
+@keyframes html-fill{
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 70%;
+    }
+}
+
+
+/* CSS Progress */
+.css{
+    width: 0;
+    height: 12px;
+    background: purple;
+    border-radius: 20px;
+    animation: css-fill 3s ease forwards;
+}
+
+@keyframes css-fill{
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 50%;
+    }
+}
+
+
+/* JavaScript Progress */
+.javascript{
+    width: 0;
+    height: 12px;
+    background: purple;
+    border-radius: 20px;
+    animation: js-fill 3s ease forwards;
+}
+
+@keyframes js-fill{
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 30%;
+    }
+}
+.skill-box{
+    margin-bottom: 35px;
+}
+.skill-text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/*EDUCATION SECTION  */
+.education{
+    padding: 50px;
+}
+.education h1{
+    text-align: center;
+     font-size: 50px;
+     margin-bottom: 30px;
+}
+.content h2{
+   
+     font-size: 25px;
+     margin: 10px;
+   
+}
+.content h3{
+   
+     font-size: 20px;
+     margin: 10px;
+   
+}
+.content p{
+    margin: 10px;
+}
+
+
+.timeline{
+    position: relative;
+    margin-left: 60px;
+    border-left: 4px solid purple;
+}
+.timeline-item{
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    background: purple;
+    border-radius: 50%;
+    position: absolute;
+    left: -12px;
+    top: 5px;
+}
+.content{
+    background: rgb(234, 231, 231);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.content:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+
+/* PROJECT SECTION */
+.project{
+    padding: 80px;
+}
+
+.project h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.project-container{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.project-container a{
+    text-decoration: none;
+    color: black;
+}
+
+/* CARD */
+.card{
+    width: 320px;
+    padding: 20px;
+    border-radius: 20px;
+    background: white;
+
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+    transition: 0.3s ease;
+
+    overflow: hidden;
+}
+.card p{
+    font-size: 20px;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+
+    display: block;
+}   
+
+/* CERTIFICATES SECTION */
+.certificate{
+    padding: 80px;
+}
+
+.certificate h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.certificate-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-items: center;
+}
+
+
+.certificate-container a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.certi{
+    width: 450px;
+    padding: 20px;
+    border-radius: 20px;
+    background: white;
+
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+
+    text-align: center;
+    text-decoration: none;
+    color: black;
+
+    transition: 0.3s ease;
+
+    overflow: hidden;
+}
+
+.certi h2{
+    min-height: 60px;
+}
+.certi p{
+    font-size: 20px;
+}
+
+.certi:hover{
+    transform: translateY(-15px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+}
+
+.certi img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+
+    display: block;
+} 
+
+
+/* CONTACT SECTION */
+
+.contact{
+    padding: 80px;
+}
+
+.contact h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.contact-left{
+    width: 40%;
+}
+
+.contact-left h2{
+    font-size: 35px;
+}
+
+.contact-left p{
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.info{
+    margin-top: 20px;
+}
+.info a{
+    text-decoration: none;
+    color: blueviolet;
+    font-size: 18px;
+}
+
+.info a:hover{
+    color: purple;
+}
+
+/* RIGHT SIDE */
+.contact-right{
+    width: 40%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input,
+textarea{
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    background: #f4f4f4;
+    font-size: 16px;
+    outline: none;
+}
+
+textarea{
+    height: 150px;
+    resize: none;
+}
+
+/* BUTTON */
+button{
+    padding: 18px;
+    border: none;
+    border-radius: 12px;
+    background: blueviolet;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: purple;
+    transform: translateY(-3px);
+}
