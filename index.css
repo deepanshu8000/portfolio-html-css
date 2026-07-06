@@ -119,7 +119,7 @@ html,body{
 .about-right{
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 20px;
      width: 35%;
     margin-right: 80px;
 }
@@ -197,9 +197,85 @@ html,body{
     }
 
     to{
-        width: 30%;
+        width: 60%;
     }
 }
+
+/* React progress */
+.react{
+    width: 0;
+    height: 12px;
+    background: purple;
+    border-radius: 20px;
+    animation: react-fill 3s ease forwards;
+}
+
+@keyframes react-fill{
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 40%;
+    }
+}
+/* MongoDB */
+.MongoDB{
+    width: 0;
+    height: 12px;
+    background: purple;
+    border-radius: 20px;
+    animation: MongoDB-fill 3s ease forwards;
+}
+
+@keyframes MongoDB-fill{
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 60%;
+    }
+}
+
+/* Express */
+.express{
+    width: 0;
+    height: 12px;
+    background: purple;
+    border-radius: 20px;
+    animation: express-fill 3s ease forwards;
+}
+
+@keyframes express-fill{
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 40%;
+    }
+}
+/* node */
+.node{
+    width: 0;
+    height: 12px;
+    background: purple;
+    border-radius: 20px;
+    animation: node-fill 3s ease forwards;
+}
+
+@keyframes node-fill{
+    from{
+        width: 0%;
+    }
+
+    to{
+        width: 40%;
+    }
+}
+
+
 .skill-box{
     margin-bottom: 35px;
 }
